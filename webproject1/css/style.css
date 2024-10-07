@@ -1,0 +1,229 @@
+
+    /* Background image for header with fade transition */
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+    body {
+        font-family: 'Lora', serif;
+
+		background-color: #ACC8E5;
+		color: #291145;
+    }
+
+
+	@font-face {
+		font-family: myfont;
+		src: url(/img/OFL.txt);
+	}
+
+
+    .header-background {
+        background-image: url('./img/college1.JPG');
+        /* Ensure the path is correct */
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        position: relative;
+        animation: fadeBackground 30s infinite ease-in-out;
+        /* Slower and smoother transition */
+    }
+
+    /* Animation for changing the background image */
+    @keyframes fadeBackground {
+        0% {
+            background-image: url('./banner2.jpg');
+        }
+
+        33% {
+            background-image: url('./img/b.tech.jpeg');
+        }
+
+        66% {
+            background-image: url('./img/techfest11.jpeg');
+        }
+
+        100% {
+            background-image: url('./banner2.jpg');
+        }
+    }
+
+    /* Overlay for the background image */
+    .header-background::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Darker overlay for clearer text */
+        z-index: 0;
+    }
+
+    /* Header text */
+    .header-background .text-center {
+        z-index: 1;
+        color: white;
+        /* Ensure the text color remains visible */
+    }
+
+    .card {
+
+
+        background-color: #f4f4f4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* Hover effect for the card */
+    .card:hover {
+
+        transform: scale(1.05);
+        /* Enlarges the card slightly */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        /* Deeper shadow */
+    }
+
+
+    /* Card text */
+    .card-text {
+        justify-content: space-around;
+    }
+
+
+    .box2 {
+        height: 40px;
+        width: 300px;
+        text-wrap: wrap;
+        /* Change text-wrap to wrap for better handling */
+        text-align: center;
+        justify-content: center;
+        display: block;
+        margin: 10px auto;
+        /* Centering the box */
+    }
+
+    .carousel {
+        width: 80%;
+        max-width: 600px;
+        /* Maximum width */
+        margin: auto;
+    }
+
+    .carousel__viewport {
+        height: 200px;
+    }
+
+
+    @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 400px;
+    }
+    .footer {
+      height: 250px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.5em 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.border2{
+	border-radius: 3cap;
+
+ background-color: rgba(102, 102, 197, 0.534);
+ text-align: center;
+ 
+
+}
